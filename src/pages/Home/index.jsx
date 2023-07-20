@@ -3,6 +3,7 @@ import { CardWrapper } from './style';
 import Card from '../../components/Card';
 import cardsData from '../../data/Carddata';
 import Container from '../../components/Container';
+import Details from '../Details';
 function Home() {
   return (
     <Container>
@@ -10,6 +11,7 @@ function Home() {
         {cardsData.map((card) => (
           <Card
             key={card.id}
+            id={card.id}
             title={card.title}
             image={card.image}
             people={card.people}

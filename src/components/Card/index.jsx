@@ -14,7 +14,17 @@ import {
 import { BsPeople, BsPeopleFill } from 'react-icons/bs';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-function Card({ title, image, people, day, price, discount, line, ...props }) {
+function Card({
+  id,
+  title,
+  image,
+  people,
+  day,
+  price,
+  discount,
+  line,
+  ...props
+}) {
   return (
     <SingleCard>
       <CardImage src={image} alt={title} />
@@ -30,7 +40,9 @@ function Card({ title, image, people, day, price, discount, line, ...props }) {
             <CardDiscount>$ {discount}</CardDiscount>
             <CardPrice> founted of ${price}</CardPrice>
           </div>
-          <CardButton>SUPPORT</CardButton>
+          <Link to={`/${id}`}>
+            <CardButton>SUPPORT</CardButton>
+          </Link>
         </CardPriceWrapper>
       </CardDesc>
     </SingleCard>

@@ -46,10 +46,10 @@ export const CardPrice = styled.p`
 `;
 
 export const CardButton = styled.button`
-  font-size: 20px;
+  font-size: 17px;
   color: white;
   background-color: green;
-  border-radius: 10px;
+  border-radius: 50px;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 20px;
 `;
