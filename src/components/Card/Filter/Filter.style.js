@@ -26,6 +26,14 @@ export const Wrapper = styled.div`
 export const FilterResponsiveWrapper = styled.div`
   transition: all 0.4s;
 `;
-export const Animation = styled.div`
+
+export const LargeCategory = styled.div`
+  animation: ${fadeInAnimation} 0.5s ease-in;
+  @media (max-width: 576px) {
+    display: none;
+  }
+`;
+
+export const SmallCategory = styled.div`
   animation: ${fadeInAnimation} 0.5s ease-in;
 `;

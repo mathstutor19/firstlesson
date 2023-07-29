@@ -14,7 +14,7 @@ function FilterResponsive() {
         <Text>Saralash</Text>
       </TextWrapper>
       {hidden && (
-        <Back>
+        <Back onClick={hiddenBack}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
